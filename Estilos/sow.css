@@ -1,0 +1,796 @@
+/* LANDING */
+
+.landing {
+    min-height: 100vh;
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.nombre {
+    margin: 0 0 1rem;
+
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.landing h1 {
+    margin: 0;
+
+    font-size: 5rem;
+    line-height: 0.95;
+    font-weight: bold;
+}
+
+.intro {
+    margin-top: 1.5rem;
+
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+
+/* BOTONES LANDING */
+
+.botones-web {
+    width: 100%;
+    margin-top: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 3rem;
+}
+
+.boton-web {
+    width: 240px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1.4rem;
+
+    font-weight: bold;
+}
+
+.boton-web img {
+    width: 220px;
+    height: 220px;
+
+    object-fit: contain;
+
+    transition: transform 0.3s ease;
+}
+
+.boton-web:hover img {
+    transform: scale(1.08);
+}
+
+.boton-web p {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+
+/* COLORES DE LOS BOTONES */
+
+.espacio {
+    color: #E96A8D;
+}
+
+.cloud {
+    color: #67C7F3;
+}
+
+.tiago {
+    color: #E0B84F;
+}
+
+.wild {
+    color: #8FCB8E;
+}
+
+
+/* SECCIONES */
+
+.seccion-web {
+    min-height: 100vh;
+
+    padding: 7rem 8rem;
+}
+
+.cabecera-seccion {
+    margin-bottom: 3rem;
+}
+
+.numero-seccion {
+    margin: 0;
+
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+
+/* TÍTULOS */
+
+.seccion-web h2 {
+    margin: 0;
+
+    font-size: 5rem;
+    line-height: 1;
+}
+
+
+/* GRID DE ANÁLISIS */
+
+.grid-analisis {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 2rem;
+}
+
+
+/* BLOQUES */
+
+.bloque {
+    min-height: 420px;
+
+    padding: 3rem;
+
+    border: 2px solid #E96A8D;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bloque h3 {
+    margin-top: 0;
+
+    font-size: 2.3rem;
+}
+
+.bloque p {
+    margin-bottom: 0;
+
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+
+/* IFRAMES */
+
+.iframe-bloque {
+    padding: 0;
+
+    overflow: hidden;
+}
+
+.iframe-bloque iframe {
+    width: 100%;
+    height: 100%;
+
+    min-height: 420px;
+
+    border: none;
+    border-radius: 1rem;
+}
+
+
+/* CONCLUSIÓN */
+
+.conclusion-seccion {
+    margin-top: 2rem;
+
+    padding: 2.5rem 3rem;
+
+    color: #FAF7F2;
+
+    border-radius: 1rem;
+}
+
+.conclusion-seccion h3 {
+    margin-top: 0;
+
+    font-size: 2.3rem;
+}
+
+.conclusion-seccion p {
+    margin-bottom: 0;
+
+    max-width: 900px;
+
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+
+/* GIF */
+
+.gif-seccion {
+    margin-top: 3rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+.gif-seccion img {
+    width: 100%;
+    max-width: 500px;
+
+    border-radius: 1rem;
+}
+
+
+/* ELESPACIO */
+
+.espacio-seccion h2,
+.espacio-seccion .numero-seccion {
+    color: #E96A8D;
+}
+
+.espacio-seccion .bloque {
+    border-color: #E96A8D;
+}
+
+.conclusion-espacio {
+    background-color: #24324A;
+}
+
+
+/* CLOUDSTUDIO */
+
+.cloud-seccion h2,
+.numero-cloud {
+    color: #67C7F3;
+}
+
+.bloque-cloud {
+    border-color: #67C7F3;
+}
+
+.conclusion-cloud {
+    background-color: #24566B;
+}
+
+
+/* TIAGO FRAGOSO */
+
+.tiago-seccion h2,
+.numero-tiago {
+    color: #E0B84F;
+}
+
+.bloque-tiago {
+    border-color: #E0B84F;
+}
+
+.conclusion-tiago {
+    background-color: #6A456B;
+}
+
+
+/* TAKE A WALK ON THE WILD SIDE */
+
+.wild-seccion h2,
+.numero-wild {
+    color: #8FCB8E;
+}
+
+.bloque-wild {
+    border-color: #8FCB8E;
+}
+
+.conclusion-wild {
+    background-color: #315E45;
+}
+
+
+/* STICKY NAV */
+
+.sticky-nav {
+    position: fixed;
+
+    right: 2rem;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1.2rem;
+
+    padding: 1.4rem 0.9rem;
+
+    background-color: #1F1F1F;
+
+    border-radius: 2rem;
+
+    z-index: 1000;
+}
+
+.sticky-nav a {
+    font-size: 1.7rem;
+    font-weight: bold;
+
+    line-height: 1;
+
+    transition: transform 0.2s ease;
+}
+
+.sticky-nav a:hover,
+.sticky-nav a:focus,
+.sticky-nav a:active {
+    transform: scale(1.4);
+}
+
+
+/* COLORES DEL STICKY */
+
+.nav-inicio {
+    color: #FAF7F2;
+}
+
+.nav-espacio {
+    color: #E96A8D;
+}
+
+.nav-cloud {
+    color: #67C7F3;
+}
+
+.nav-tiago {
+    color: #E0B84F;
+}
+
+.nav-wild {
+    color: #8FCB8E;
+}
+.bloque {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.bloque:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* NOTA DE HOVER */
+
+@media (max-width: 650px) {
+
+    .nota-hover {
+        display: none;
+    }
+
+    /* Portada 2x2 */
+    .botones-web {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem 1rem;
+        margin-top: 3rem;
+    }
+
+    /* ...resto del responsive... */
+}
+
+
+/* BLOQUES INTERACTIVOS */
+
+.bloque-interactivo {
+    position: relative;
+    overflow: hidden;
+}
+
+.contenido-texto {
+    position: relative;
+    z-index: 1;
+
+    transition: opacity 0.3s ease;
+}
+
+
+/* IMAGEN QUE APARECE AL HACER HOVER */
+
+.imagen-hover {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    opacity: 0;
+
+    transition: opacity 0.3s ease;
+}
+
+
+/* HOVER */
+
+.bloque-interactivo:hover .contenido-texto {
+    opacity: 0;
+}
+
+.bloque-interactivo:hover .imagen-hover {
+    opacity: 1;
+}
+
+
+/* CONCLUSIÓN */
+
+.conclusion-seccion {
+    width: 100%;
+
+    margin-top: 2.5rem;
+    padding: 3rem 4rem;
+
+    min-height: 220px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-radius: 1rem;
+}
+
+.conclusion-seccion h3 {
+    margin: 0 0 1rem;
+
+    font-size: 2.5rem;
+}
+
+.conclusion-seccion p {
+    margin: 0;
+
+    max-width: 1100px;
+
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+.imagen-link-bloque {
+    padding: 0;
+    overflow: hidden;
+}
+
+.imagen-link-bloque a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.imagen-link-bloque img {
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+
+    object-fit: contain;
+
+    transition: transform 0.3s ease;
+}
+
+.imagen-link-bloque:hover img {
+    transform: scale(1.03);
+}
+.impresion-seccion {
+    width: 100%;
+    margin-bottom: 2.5rem;
+    padding: 2rem 3rem;
+
+    border-radius: 1rem;
+}
+
+.impresion-seccion h3 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.impresion-seccion p {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.impresion-espacio {
+    background-color: #F9D9E2;
+}
+/* IMPRESIÓN INICIAL - BASE */
+
+.impresion-seccion {
+    width: 100%;
+
+    margin-bottom: 2.5rem;
+    padding: 2.5rem 3rem;
+
+    border-radius: 1rem;
+}
+
+.impresion-seccion h3 {
+    margin: 0 0 1rem;
+
+    font-size: 2.2rem;
+}
+
+.impresion-seccion p {
+    margin: 0;
+
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+
+/* ELESPACIO */
+
+.impresion-espacio {
+    background-color: #F9D9E2;
+    color: #24324A;
+}
+
+
+/* CLOUDSTUDIO */
+
+.impresion-cloud {
+    background-color: #DDF3FC;
+    color: #24566B;
+}
+
+
+/* TIAGO FRAGOSO */
+
+.impresion-tiago {
+    background-color: #F7E8B5;
+    color: #6A456B;
+}
+
+
+/* TAKE A WALK ON THE WILD SIDE */
+
+.impresion-wild {
+    background-color: #DDEEDC;
+    color: #315E45;
+}
+
+.contenido-texto h4 {
+    margin: 1.5rem 0 0.5rem;
+
+    font-size: 1.35rem;
+    font-weight: bold;
+}
+
+.contenido-texto p {
+    margin: 0 0 1.2rem;
+
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.contenido-texto strong {
+    font-weight: bold;
+}
+
+.iframe-web {
+    width: 100%;
+    height: 75vh;
+    margin: 2.5rem 0 3rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.iframe-web iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+/* Tamaños fluidos generales */
+.landing {
+    padding: clamp(1.5rem, 4vw, 3rem);
+}
+
+.landing h1 {
+    font-size: clamp(3rem, 8vw, 5rem);
+}
+
+.nombre {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+.intro {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+/* Botones de la portada */
+.botones-web {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: clamp(1.5rem, 4vw, 3rem);
+    width: min(100%, 1000px);
+}
+
+.boton-web {
+    width: 100%;
+}
+
+.boton-web img {
+    width: clamp(120px, 20vw, 220px);
+    height: clamp(120px, 20vw, 220px);
+}
+
+.boton-web p {
+    font-size: clamp(1rem, 2vw, 1.4rem);
+}
+
+/* Secciones */
+.seccion-web {
+    padding:
+        clamp(4rem, 8vw, 7rem)
+        clamp(1.25rem, 6vw, 8rem);
+}
+
+.seccion-web h2 {
+    font-size: clamp(2.7rem, 8vw, 5rem);
+}
+
+.numero-seccion {
+    font-size: clamp(1.2rem, 3vw, 1.7rem);
+}
+
+.bloque-vertical,
+.conclusion-seccion {
+    padding: clamp(1.5rem, 5vw, 4rem);
+}
+
+.bloque-vertical h3,
+.conclusion-seccion h3 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.bloque-vertical h4,
+.contenido-texto h4 {
+    font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+}
+
+.bloque-vertical p,
+.contenido-texto p,
+.conclusion-seccion p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+/* Fotos principales e iframes */
+.hero-web,
+.iframe-web {
+    width: 100%;
+}
+
+.iframe-web {
+    height: clamp(420px, 70vh, 750px);
+}
+
+.hero-web img,
+.iframe-web iframe {
+    width: 100%;
+}
+
+/* Barra sticky */
+.sticky-nav {
+    right: clamp(.5rem, 2vw, 2rem);
+    gap: clamp(.6rem, 1.5vw, 1.2rem);
+    padding:
+        clamp(.8rem, 2vw, 1.4rem)
+        clamp(.55rem, 1.5vw, .9rem);
+}
+
+.sticky-nav a {
+    font-size: clamp(1.1rem, 3vw, 1.7rem);
+}
+
+/* GIF */
+.gif-seccion img {
+    width: min(100%, 500px);
+}
+
+/* =========================
+   MÓVIL
+   ========================= */
+
+@media (max-width: 650px) {
+
+    /* Portada 2x2 */
+    .botones-web {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem 1rem;
+        margin-top: 3rem;
+    }
+
+    .boton-web img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .boton-web p {
+        font-size: 1rem;
+    }
+
+    /* Menos aire lateral */
+    .seccion-web {
+        padding-left: 1rem;
+        padding-right: 3.5rem;
+    }
+
+    /* Bloques más compactos */
+    .bloque-vertical,
+    .conclusion-seccion {
+        min-height: auto;
+        padding: 1.5rem;
+    }
+
+    /* En móvil quitamos el efecto hover */
+    .bloque-interactivo {
+        overflow: visible;
+    }
+
+    .bloque-interactivo .contenido-texto {
+        opacity: 1;
+    }
+
+    .bloque-interactivo .imagen-hover {
+        position: static;
+        opacity: 1;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        margin-top: 1.5rem;
+        border-radius: .75rem;
+    }
+
+    .bloque-interactivo:hover .contenido-texto {
+        opacity: 1;
+    }
+
+    .bloque-interactivo:hover .imagen-hover {
+        opacity: 1;
+    }
+
+    /* Iframes algo más bajos */
+    .iframe-web {
+        height: 500px;
+    }
+
+    /* Sticky sigue vertical pero más pequeña */
+    .sticky-nav {
+        right: .4rem;
+        padding: .8rem .55rem;
+        gap: .7rem;
+    }
+
+    .sticky-nav a {
+        font-size: 1.1rem;
+    }
+
+    /* Evitamos que el hover agrande demasiado en táctil */
+    .sticky-nav a:hover,
+    .sticky-nav a:focus,
+    .sticky-nav a:active {
+        transform: scale(1.2);
+    }
+}

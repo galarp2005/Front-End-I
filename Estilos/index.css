@@ -1,0 +1,25 @@
+:root {
+    --background: #FAF7F2;
+    --text: #1F1F1F;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: "Times New Roman", Times, serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}

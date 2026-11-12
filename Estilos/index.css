@@ -1,25 +1,56 @@
+/* Colores generales */
 :root {
     --background: #FAF7F2;
     --text: #1F1F1F;
 }
 
+/* El padding y los bordes se incluyen en el tamaño de los elementos */
 * {
     box-sizing: border-box;
 }
 
+/* Estilo general y tipografía para textos largos */
 body {
     margin: 0;
     background-color: var(--background);
     color: var(--text);
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Nunito Sans", Arial, sans-serif;
 }
 
+/* Tipografía para títulos */
+h1,
+h2,
+h3 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+/* Enlaces */
 a {
     color: inherit;
     text-decoration: none;
 }
 
+/* Imágenes adaptadas al ancho de su contenedor */
 img {
     max-width: 100%;
     display: block;
+}
+
+/* Los botones utilizan la tipografía del resto de la página */
+button {
+    font: inherit;
+}
+
+/* Permite ocultar el menú y las imágenes desde JavaScript.
+   Evita que display: flex anule el atributo hidden. */
+[hidden] {
+    display: none !important;
+}
+
+/* Marca el elemento seleccionado al navegar con el teclado */
+:focus-visible {
+    outline: 3px solid currentColor;
+    outline-offset: 5px;
 }

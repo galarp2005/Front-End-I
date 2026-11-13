@@ -1,15 +1,16 @@
+
 /* Colores generales */
 :root {
     --background: #FAF7F2;
     --text: #1F1F1F;
 }
 
-/* El padding y los bordes se incluyen en el tamaÒo de los elementos */
+/* El padding y los bordes se incluyen en el tama√±o de los elementos */
 * {
     box-sizing: border-box;
 }
 
-/* Estilo general y tipografÌa para textos largos */
+/* Estilo general y tipograf√≠a para textos largos */
 body {
     margin: 0;
     background-color: var(--background);
@@ -17,7 +18,7 @@ body {
     font-family: "Nunito Sans", Arial, sans-serif;
 }
 
-/* TipografÌa para tÌtulos */
+/* Tipograf√≠a para t√≠tulos */
 h1,
 h2,
 h3 {
@@ -32,19 +33,18 @@ a {
     text-decoration: none;
 }
 
-/* Im·genes adaptadas al ancho de su contenedor */
+/* Im√°genes adaptadas al ancho de su contenedor */
 img {
     max-width: 100%;
     display: block;
 }
 
-/* Los botones utilizan la tipografÌa del resto de la p·gina */
+/* Los botones utilizan la tipograf√≠a del resto de la p√°gina */
 button {
     font: inherit;
 }
 
-/* Permite ocultar el men˙ y las im·genes desde JavaScript.
-   Evita que display: flex anule el atributo hidden. */
+/* Permite ocultar el men√∫ y las im√°genes desde JavaScript */
 [hidden] {
     display: none !important;
 }

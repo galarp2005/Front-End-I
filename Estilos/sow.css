@@ -1,3 +1,4 @@
+
 /* =========================
    PORTADA
    ========================= */
@@ -56,16 +57,16 @@
     font-weight: 700;
 }
 
-    .boton-web img {
-        width: clamp(120px, 18vw, 200px);
-        height: clamp(120px, 18vw, 200px);
-        object-fit: contain;
-    }
+.boton-web img {
+    width: clamp(120px, 18vw, 200px);
+    height: clamp(120px, 18vw, 200px);
+    object-fit: contain;
+}
 
-    .boton-web p {
-        margin: 0;
-        font-size: 1.2rem;
-    }
+.boton-web p {
+    margin: 0;
+    font-size: 1.2rem;
+}
 
 
 /* =========================
@@ -107,27 +108,28 @@
 
 
 /* =========================
-   TÍTULOS CON ENLACE
+   ENLACES BAJO LOS TÍTULOS
    ========================= */
 
-.enlace-titulo {
+.enlace-web {
+    display: inline-block;
+    max-width: 100%;
+    margin-top: .75rem;
+    color: var(--color-enlace);
+    font-size: clamp(.95rem, 1.4vw, 1.1rem);
+    font-weight: 700;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
     text-decoration: underline;
     text-decoration-color: transparent;
-    text-decoration-thickness: 3px;
-    text-underline-offset: .12em;
-    transition: color .2s ease, text-decoration-color .2s ease;
+    text-decoration-thickness: 2px;
+    text-underline-offset: .25em;
+    transition: text-decoration-color .2s ease;
 }
 
-    .enlace-titulo:hover,
-    .enlace-titulo:focus-visible {
-        color: var(--text);
-        text-decoration-color: var(--acento);
-    }
-
-.aviso-enlace {
-    margin: 1rem 0 0;
-    font-size: .95rem;
-    line-height: 1.5;
+.enlace-web:hover,
+.enlace-web:focus-visible {
+    text-decoration-color: currentColor;
 }
 
 
@@ -142,20 +144,20 @@
     align-items: stretch;
 }
 
-    .grid-analisis > div {
-        min-width: 0;
-    }
+.grid-analisis > div {
+    min-width: 0;
+}
 
-    /* Dos cajas separadas con la misma altura */
-    .grid-analisis > .bloque-pareja {
-        flex: 0 0 calc(50% - 1rem);
-    }
+/* Dos cajas separadas con la misma altura */
+.grid-analisis > .bloque-pareja {
+    flex: 0 0 calc(50% - 1rem);
+}
 
-    /* Cada uno ocupa una fila completa */
-    .grid-analisis > .bloque-tecnico,
-    .grid-analisis > .conclusion-seccion {
-        flex: 0 0 100%;
-    }
+/* Cada uno ocupa una fila completa */
+.grid-analisis > .bloque-tecnico,
+.grid-analisis > .conclusion-seccion {
+    flex: 0 0 100%;
+}
 
 .bloque,
 .impresion-seccion,
@@ -168,14 +170,14 @@
     border: 2px solid var(--acento);
 }
 
-    .bloque h3,
-    .impresion-seccion h3,
-    .conclusion-seccion h3,
-    .galeria h3 {
-        margin: 0 0 1.25rem;
-        font-size: clamp(1.7rem, 2.5vw, 2.3rem);
-        line-height: 1.2;
-    }
+.bloque h3,
+.impresion-seccion h3,
+.conclusion-seccion h3,
+.galeria h3 {
+    margin: 0 0 1.25rem;
+    font-size: clamp(1.7rem, 2.5vw, 2.3rem);
+    line-height: 1.2;
+}
 
 .contenido-texto h4 {
     margin: 1.5rem 0 .5rem;
@@ -191,16 +193,15 @@
     line-height: 1.7;
 }
 
-    .bloque p:last-child,
-    .impresion-seccion p:last-child,
-    .conclusion-seccion p:last-child {
-        margin-bottom: 0;
-    }
+.bloque p:last-child,
+.impresion-seccion p:last-child,
+.conclusion-seccion p:last-child {
+    margin-bottom: 0;
+}
 
 .bloque-pareja .contenido-texto {
     max-width: 75ch;
     margin: 0 auto;
-    font-size: 1.1rem;
 }
 
 
@@ -211,7 +212,6 @@
 /* Una caja con dos columnas de lectura */
 .bloque-tecnico > .contenido-texto {
     width: 100%;
-    font-size: 1.1rem;
     column-count: 2;
     column-gap: clamp(2rem, 4vw, 4rem);
 }
@@ -235,22 +235,21 @@
 
 .impresion-seccion {
     margin-bottom: 2.5rem;
-    font-size: 1.1rem;
 }
 
 .conclusion-seccion {
     color: #FAF7F2;
 }
 
-    .impresion-seccion > h3,
-    .impresion-seccion > p,
-    .conclusion-seccion > h3,
-    .conclusion-seccion > p {
-        width: 100%;
-        max-width: 48rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.impresion-seccion > h3,
+.impresion-seccion > p,
+.conclusion-seccion > h3,
+.conclusion-seccion > p {
+    width: 100%;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 /* =========================
@@ -259,18 +258,22 @@
 
 .espacio-seccion {
     --acento: #E96A8D;
+    --color-enlace: #B84265;
 }
 
 .cloud-seccion {
     --acento: #67C7F3;
+    --color-enlace: #26759A;
 }
 
 .tiago-seccion {
     --acento: #E0B84F;
+    --color-enlace: #896611;
 }
 
 .wild-seccion {
     --acento: #8FCB8E;
+    --color-enlace: #3F7B49;
 }
 
 /* Colores compartidos por portada y menú */
@@ -297,39 +300,71 @@
 /* Introducciones: centro claro y bordes más oscuros */
 .impresion-espacio {
     color: #24324A;
-    background: radial-gradient(ellipse at center, #F9D9E2 35%, #E8AEC0 100%);
+    background: radial-gradient(
+        ellipse at center,
+        #F9D9E2 35%,
+        #E8AEC0 100%
+    );
 }
 
 .impresion-cloud {
     color: #24566B;
-    background: radial-gradient(ellipse at center, #DDF3FC 35%, #A9D6E8 100%);
+    background: radial-gradient(
+        ellipse at center,
+        #DDF3FC 35%,
+        #A9D6E8 100%
+    );
 }
 
 .impresion-tiago {
     color: #6A456B;
-    background: radial-gradient(ellipse at center, #F7E8B5 35%, #DDC477 100%);
+    background: radial-gradient(
+        ellipse at center,
+        #F7E8B5 35%,
+        #DDC477 100%
+    );
 }
 
 .impresion-wild {
     color: #315E45;
-    background: radial-gradient(ellipse at center, #DDEEDC 35%, #AFD0AC 100%);
+    background: radial-gradient(
+        ellipse at center,
+        #DDEEDC 35%,
+        #AFD0AC 100%
+    );
 }
 
 /* Conclusiones: color original y bordes más oscuros */
 .conclusion-espacio {
-    background: radial-gradient(ellipse at center, #24324A 35%, #131C2C 100%);
+    background: radial-gradient(
+        ellipse at center,
+        #24324A 35%,
+        #131C2C 100%
+    );
 }
 
 .conclusion-cloud {
-    background: radial-gradient(ellipse at center, #24566B 35%, #123341 100%);
+    background: radial-gradient(
+        ellipse at center,
+        #24566B 35%,
+        #123341 100%
+    );
 }
 
 .conclusion-tiago {
-    background: radial-gradient(ellipse at center, #6A456B 35%, #402741 100%);
+    background: radial-gradient(
+        ellipse at center,
+        #6A456B 35%,
+        #402741 100%
+    );
 }
 
 .conclusion-wild {
-    background: radial-gradient(ellipse at center, #315E45 35%, #1B3828 100%);
+    background: radial-gradient(
+        ellipse at center,
+        #315E45 35%,
+        #1B3828 100%
+    );
 }
 
 
@@ -345,11 +380,11 @@
     overflow: hidden;
 }
 
-    .iframe-web iframe {
-        width: 100%;
-        height: 100%;
-        border: 0;
-    }
+.iframe-web iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 
 
 /* =========================
@@ -384,10 +419,10 @@
     box-shadow: 0 0 0 3px var(--acento);
 }
 
-    .enlace-imagen:hover img,
-    .enlace-imagen:focus-visible img {
-        border-color: var(--text);
-    }
+.enlace-imagen:hover img,
+.enlace-imagen:focus-visible img {
+    border-color: var(--text);
+}
 
 .diapositiva figcaption {
     max-width: 75ch;
@@ -413,17 +448,17 @@
     margin-top: 1rem;
 }
 
-    .controles-galeria button {
-        width: 48px;
-        height: 48px;
-        padding: 0;
-        border: 2px solid var(--text);
-        border-radius: 50%;
-        background-color: var(--acento);
-        color: var(--text);
-        font-size: 1.6rem;
-        cursor: pointer;
-    }
+.controles-galeria button {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: 2px solid var(--text);
+    border-radius: 50%;
+    background-color: var(--acento);
+    color: var(--text);
+    font-size: 1.6rem;
+    cursor: pointer;
+}
 
 .contador {
     min-width: 5ch;
@@ -442,10 +477,10 @@
     justify-content: center;
 }
 
-    .gif-seccion img {
-        width: min(100%, 500px);
-        border-radius: 1rem;
-    }
+.gif-seccion img {
+    width: min(100%, 500px);
+    border-radius: 1rem;
+}
 
 
 /* =========================
@@ -467,16 +502,16 @@
     z-index: 1000;
 }
 
-    .sticky-nav a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-width: 44px;
-        min-height: 44px;
-        font-size: 1.5rem;
-        font-weight: 700;
-        border-radius: 50%;
-    }
+.sticky-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 50%;
+}
 
 .nav-inicio {
     color: #FAF7F2;
@@ -520,30 +555,30 @@
     border-radius: 1.5rem;
 }
 
-    .bloque-referencias h3 {
-        margin: 0 0 1.5rem;
-        font-size: clamp(1.5rem, 3vw, 2rem);
-    }
+.bloque-referencias h3 {
+    margin: 0 0 1.5rem;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
 
-        .bloque-referencias h3:not(:first-child) {
-            margin-top: 3rem;
-        }
+.bloque-referencias h3:not(:first-child) {
+    margin-top: 3rem;
+}
 
-    .bloque-referencias p {
-        max-width: 75ch;
-        margin: 0 0 1.5rem;
-        padding-left: 1.5rem;
-        text-indent: -1.5rem;
-        font-size: 1.1rem;
-        line-height: 1.7;
-    }
+.bloque-referencias p {
+    max-width: 75ch;
+    margin: 0 0 1.5rem;
+    padding-left: 1.5rem;
+    text-indent: -1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
 
-    .bloque-referencias a {
-        color: #6B4939;
-        text-decoration: underline;
-        text-underline-offset: .2rem;
-        overflow-wrap: anywhere;
-    }
+.bloque-referencias a {
+    color: #6B4939;
+    text-decoration: underline;
+    text-underline-offset: .2rem;
+    overflow-wrap: anywhere;
+}
 
 
 /* =========================
@@ -578,15 +613,15 @@
         min-width: 0;
     }
 
-        .boton-web img {
-            width: 120px;
-            height: 120px;
-        }
+    .boton-web img {
+        width: 120px;
+        height: 120px;
+    }
 
-        .boton-web p {
-            font-size: 1rem;
-            overflow-wrap: anywhere;
-        }
+    .boton-web p {
+        font-size: 1rem;
+        overflow-wrap: anywhere;
+    }
 
     .seccion-web,
     .referencias {
@@ -611,9 +646,9 @@
         padding: .35rem;
     }
 
-        .sticky-nav a {
-            font-size: 1.2rem;
-        }
+    .sticky-nav a {
+        font-size: 1.2rem;
+    }
 
     .referencias {
         padding-bottom: 7rem;
@@ -625,15 +660,3 @@
 }
 
 
-/* =========================
-   MOVIMIENTO REDUCIDO
-   ========================= */
-
-@media (prefers-reduced-motion: reduce) {
-
-    .enlace-titulo,
-    .enlace-imagen,
-    .diapositiva img {
-        transition: none;
-    }
-}
